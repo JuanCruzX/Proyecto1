@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #141a35;
+  background-image: linear-gradient(
+      10deg,
+      rgba(94, 105, 157, 0.6), rgba(94, 105, 157, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2065&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Sans-serif;}
+
+/*body {	
+	font-family: "Open Sans", Arial, Sans-serif;
+	background-color: #5e699d;
+	background-position: center;
+  background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}*/
+
+header, form {
+	width: 80%;
+	max-width: 1000px;	
+	margin: auto;
+	padding: 20px;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+	color: #eaeaed;
+}
+
+.header {
+	text-align: center;/*
+	background-color: rgba(125, 157, 156, 0.1);*/	
+	margin-top: 30px;
+}
+
+form {
+	background-color: rgba(43, 48, 72, 0.7);
+	margin-bottom: 30px;
+	font-size: 22px;
+	box-shadow: 0px 0px 30px #55596d;
+	border: 1px solid #2b3048;
+	border-radius: 5px;
+
+}
+
+.header h1 {
+	margin-bottom: 50px;
+	color: #fff;
+	font-size: 50px;
+	font-family: sans-serif;
+}
+
+.header p {
+	margin-top: 35px;
+	font-size: 23px;
+	font-style: italic;
+	margin-bottom: -20px;
+	color: #fff;
+}
+
+main p {
+	margin-bottom: 6px;
+}
+
+.groups {
+	width: 90%;
+	max-width: 1000px;
+	margin: 30px auto;
+}
+
+.label-name, .label-apellido, .label-email, .label-edad, .desplegable, .genero, button {
+	cursor: pointer;
+}
+
+.label-name, .label-apellido, .label-email, .label-edad,  .picon, .radio {
+	margin-left: 9px;
+}
+
+.icon{
+	display: inline-block;
+}
+
+.entrada {
+	width: 100%;
+	padding: 5px;
+	margin-top: 6px;
+	font-size: 20px;
+	color: white;
+}
+
+::placeholder { 
+	color: rgba(213, 214, 218, 0.5);
+	font-size: 18px;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.desplegable{
+	padding: 5px;
+	color: #eaeaed;
+	display: block;
+	width: 50%;
+}
+
+.genero, .checkbox {
+	display: block;
+	padding: 6px;	
+}
+
+.radio {
+	margin-bottom: 6px;	
+}
+
+.checkbox a{
+	color: #fff;
+	padding: 5px;
+}
+
+.comment{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 100px;
+	max-height: 300px;
+	padding: 5px;
+	font-family: "Open Sans", Arial, Sans-serif;
+	color: white;
+	font-size: 20px;
+	margin: 6px;
+	border: 1px solid #000;
+	margin-left: 0px;
+}
+
+input, textarea, select, fieldset {
+	background-color: #6b6e7f;
+	cursor: pointer;
+}
+
+button {
+	width: 100%;
+	height: 50px;
+ 	font-size: 22px;
+ 	padding: 5px 15px;
+ 	border: 1px solid #2b3048;
+ 	box-shadow: 0px 0px 10px #b1b2ad;
+ 	border-radius: 2px;
+ 	background-color: #d5d6da;
+}
+
+
+button:hover {
+	background-color: #2b3048;
+	height: 50px;
+	color: #eaeaed;
+	box-shadow: 0px 0px 10px #b1b2ad;
+	border: 1px solid #2b3048;
+	border-radius: 5px;
+}
+
+/*Adaptación a otras medidas de pantalla*/
+
+@media (max-width: 800px){
+	header, form {
+		width: 100%;
+	}
+	form {
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-width: 650px){
+	.header h1 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 550px){
+	.header h1 {
+		font-size: 30px;
+	}
+	.header p {
+		font-size: 18px;
+	}
+}
